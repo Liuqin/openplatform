@@ -1,0 +1,15 @@
+server:
+  port: 20000 # eureka服务端口
+spring:
+  application:
+    name: openapi-eureka # 服务名字
+  security: # eureka 安全设置
+    user:
+      name: admin
+      password: admin
+eureka:
+  client:
+    service-url: # 注册中心的zone地址
+      defaultZone: http://localhost:20000/eureka
+    fetch-registry: false # 单机版的配置
+    register-with-eureka: false  # 后续看内存情况配置eureka集群

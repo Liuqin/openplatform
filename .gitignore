@@ -3,3 +3,7 @@
 
 *.iml
 **/*.iml
+
+target
+
+**/target
