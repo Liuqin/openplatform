@@ -1,0 +1,322 @@
+2021-02-25 19:07:56.745  INFO 12864 --- [main] c.l.openplatform.eureka.EurekaStartApp   : No active profile set, falling back to default profiles: default
+2021-02-25 19:07:57.906  WARN 12864 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-02-25 19:07:58.276  INFO 12864 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61a10065-1743-3ff5-9967-c04e27f55d87
+2021-02-25 19:07:59.776  INFO 12864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20000 (http)
+2021-02-25 19:07:59.870  INFO 12864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-25 19:07:59.870  INFO 12864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-02-25 19:08:00.291  INFO 12864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-25 19:08:00.291  INFO 12864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3532 ms
+2021-02-25 19:08:00.479  WARN 12864 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-02-25 19:08:00.479  INFO 12864 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-25 19:08:00.494  INFO 12864 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1937eaff
+2021-02-25 19:08:01.963  INFO 12864 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2021-02-25 19:08:02.010  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-02-25 19:08:02.025  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-02-25 19:08:02.228  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-02-25 19:08:02.228  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-02-25 19:08:02.869  INFO 12864 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 19:08:02.916  INFO 12864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1187dc82, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ae1f80, org.springframework.security.web.header.HeaderWriterFilter@37d0d373, org.springframework.security.web.authentication.logout.LogoutFilter@52c46334, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e2eead5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6df791a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f8667bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fd1ea75, org.springframework.security.web.session.SessionManagementFilter@64bba0eb, org.springframework.security.web.access.ExceptionTranslationFilter@b3857e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@505d2bac]
+2021-02-25 19:08:02.931  WARN 12864 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-02-25 19:08:02.931  INFO 12864 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-25 19:08:03.072  INFO 12864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 19:08:04.239  INFO 12864 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-02-25 19:08:04.286  INFO 12864 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-02-25 19:08:04.286  INFO 12864 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-02-25 19:08:04.286  INFO 12864 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614251284286 with initial instances count: 0
+2021-02-25 19:08:04.333  INFO 12864 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-02-25 19:08:04.333  INFO 12864 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:20000/eureka/]
+2021-02-25 19:08:05.645  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-02-25 19:08:05.645  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-02-25 19:08:05.645  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-02-25 19:08:05.661  INFO 12864 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-02-25 19:08:05.770  INFO 12864 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:20000/eureka/
+2021-02-25 19:08:05.786  INFO 12864 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-02-25 19:08:05.786  INFO 12864 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-02-25 19:08:05.848  INFO 12864 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application OPENAPI-EUREKA with eureka with status UP
+2021-02-25 19:08:05.848  INFO 12864 --- [Thread-30] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-02-25 19:08:05.848  INFO 12864 --- [Thread-30] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-02-25 19:08:05.848  INFO 12864 --- [Thread-30] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-02-25 19:08:05.895  INFO 12864 --- [Thread-30] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-02-25 19:08:05.911  INFO 12864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20000 (http) with context path ''
+2021-02-25 19:08:05.911  INFO 12864 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20000
+2021-02-25 19:08:06.582  INFO 12864 --- [main] c.l.openplatform.eureka.EurekaStartApp   : Started EurekaStartApp in 13.205 seconds (JVM running for 15.899)
+2021-02-25 19:08:07.723  INFO 12864 --- [RMI TCP Connection(7)-192.168.137.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 19:08:07.723  INFO 12864 --- [RMI TCP Connection(7)-192.168.137.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-25 19:08:07.738  INFO 12864 --- [RMI TCP Connection(7)-192.168.137.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-02-25 19:09:05.901  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:09:41.769  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 19:09:42.332  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 19:10:05.904  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 19:11:05.917  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2021-02-25 19:12:05.928  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2021-02-25 19:13:05.931  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 19:13:16.055  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 19:13:16.571  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 19:14:05.939  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:15:05.943  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2021-02-25 19:16:05.945  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 19:17:05.954  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2021-02-25 19:18:05.961  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2021-02-25 19:19:05.962  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:20:05.962  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:21:05.967  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2021-02-25 19:22:05.976  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:23:05.795  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-02-25 19:23:05.983  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2021-02-25 19:24:05.983  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:25:05.993  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2021-02-25 19:26:06.003  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2021-02-25 19:27:06.004  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:28:06.017  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2021-02-25 19:29:06.026  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:30:06.026  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:31:06.034  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2021-02-25 19:32:06.049  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
+2021-02-25 19:33:06.059  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:34:06.066  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2021-02-25 19:35:06.071  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2021-02-25 19:36:06.085  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2021-02-25 19:37:06.086  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 19:38:05.799  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-02-25 19:38:06.095  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:38:45.473  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 19:38:46.004  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 19:39:06.103  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:40:06.104  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:41:06.108  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 19:42:06.113  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2021-02-25 19:43:06.116  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 19:44:06.129  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2021-02-25 19:44:31.457  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 19:44:31.972  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 19:45:06.130  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 19:46:06.130  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:47:06.135  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2021-02-25 19:47:57.882  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 19:47:58.398  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 19:48:06.161  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 25ms
+2021-02-25 19:49:06.172  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2021-02-25 19:49:30.628  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 19:49:31.143  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 19:49:39.438  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 19:49:39.954  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 19:50:06.173  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:51:06.173  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:52:06.180  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2021-02-25 19:53:05.812  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2021-02-25 19:53:06.187  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2021-02-25 19:54:06.197  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2021-02-25 19:55:06.204  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2021-02-25 19:56:06.215  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2021-02-25 19:56:37.463  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 19:56:37.994  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 19:57:06.216  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 19:58:06.224  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 19:59:06.229  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2021-02-25 20:00:06.234  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2021-02-25 20:01:06.234  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:02:06.235  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:03:06.236  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:04:06.239  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 20:05:06.240  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:06:06.240  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:07:06.243  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 20:08:05.812  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2021-02-25 20:08:06.244  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:09:06.248  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 20:10:06.249  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:11:05.857  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:11:06.251  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 20:11:06.364  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:12:06.251  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:13:06.254  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 20:14:06.260  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2021-02-25 20:15:06.260  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:16:06.262  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:17:06.262  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:18:06.263  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:19:06.265  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:20:06.265  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:21:06.266  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:22:06.267  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:22:08.719  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:22:09.223  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:23:05.812  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2021-02-25 20:23:06.269  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:23:34.441  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:23:34.547  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:23:34.553  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:23:34.946  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:23:34.946  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:24:06.269  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:24:42.886  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:24:42.984  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:24:42.989  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:24:43.404  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:24:43.404  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:25:06.270  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:26:06.273  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 20:27:06.274  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:28:06.280  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2021-02-25 20:29:06.281  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:29:33.072  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:29:33.580  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:30:06.281  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:30:07.291  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:30:07.388  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:30:07.393  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:30:07.803  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:30:07.803  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:31:06.283  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:32:06.285  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:33:06.285  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:34:06.285  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:35:06.288  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 20:36:06.288  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:37:06.289  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:38:05.812  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2021-02-25 20:38:06.290  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:39:06.291  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:39:09.188  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:39:09.699  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:39:46.501  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:39:46.602  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:39:46.613  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:39:47.004  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:39:47.006  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:40:06.292  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:41:06.292  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:42:00.675  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:42:01.184  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:42:06.292  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:43:06.293  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:44:06.293  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:45:06.293  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:46:06.294  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:46:15.393  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:46:15.902  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:46:48.027  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:46:48.143  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:46:48.150  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:46:48.532  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:46:48.534  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:46:50.090  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=false)
+2021-02-25 20:46:50.191  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:46:50.599  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=true)
+2021-02-25 20:46:50.599  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:47:06.295  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:47:24.300  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 20:47:24.397  INFO 12864 --- [http-nio-20000-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:47:24.805  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 20:47:24.805  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:47:26.606  INFO 12864 --- [http-nio-20000-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=false)
+2021-02-25 20:47:26.681  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:47:27.118  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=true)
+2021-02-25 20:47:27.118  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:48:06.295  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:48:45.779  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:48:46.287  INFO 12864 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:49:06.296  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:49:12.109  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:49:12.616  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:49:49.456  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:49:49.969  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:50:06.296  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:51:06.297  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:51:41.846  INFO 12864 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 20:51:42.360  INFO 12864 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 20:52:06.297  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:52:35.856  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 20:52:36.367  INFO 12864 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 20:53:05.812  INFO 12864 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2021-02-25 20:53:06.297  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:54:06.298  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:55:06.299  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:56:06.300  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 20:57:06.301  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:58:06.303  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 20:59:06.304  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 21:00:06.307  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2021-02-25 21:00:31.243  INFO 12864 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 21:00:31.754  INFO 12864 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 21:00:52.318  INFO 12864 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 21:00:52.826  INFO 12864 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 21:01:06.308  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 21:02:06.309  INFO 12864 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 21:26:36.192  INFO 3544 --- [main] c.l.openplatform.eureka.EurekaStartApp   : No active profile set, falling back to default profiles: default
+2021-02-25 21:26:37.370  WARN 3544 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-02-25 21:26:37.713  INFO 3544 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=61a10065-1743-3ff5-9967-c04e27f55d87
+2021-02-25 21:26:38.073  INFO 3544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20000 (http)
+2021-02-25 21:26:38.108  INFO 3544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-25 21:26:38.108  INFO 3544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2021-02-25 21:26:38.450  INFO 3544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-25 21:26:38.450  INFO 3544 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2243 ms
+2021-02-25 21:26:38.693  WARN 3544 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-02-25 21:26:38.693  INFO 3544 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-25 21:26:38.728  INFO 3544 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@44b29496
+2021-02-25 21:26:40.248  INFO 3544 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2021-02-25 21:26:40.332  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-02-25 21:26:40.350  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-02-25 21:26:40.666  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-02-25 21:26:40.666  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-02-25 21:26:41.289  INFO 3544 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 21:26:41.337  INFO 3544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b7308aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e37fb82, org.springframework.security.web.header.HeaderWriterFilter@2fca3eb5, org.springframework.security.web.authentication.logout.LogoutFilter@31228d83, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1247c72e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23f60b7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c5747db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42aa1324, org.springframework.security.web.session.SessionManagementFilter@426710f0, org.springframework.security.web.access.ExceptionTranslationFilter@1d283d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@227a933d]
+2021-02-25 21:26:41.349  WARN 3544 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-02-25 21:26:41.349  INFO 3544 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-02-25 21:26:41.508  INFO 3544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 21:26:42.631  INFO 3544 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-02-25 21:26:42.667  INFO 3544 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-02-25 21:26:42.667  INFO 3544 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-02-25 21:26:42.692  INFO 3544 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614259602675 with initial instances count: 0
+2021-02-25 21:26:42.725  INFO 3544 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-02-25 21:26:42.727  INFO 3544 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:20000/eureka/]
+2021-02-25 21:26:43.805  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-02-25 21:26:43.805  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-02-25 21:26:43.805  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-02-25 21:26:43.805  INFO 3544 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-02-25 21:26:43.921  INFO 3544 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:20000/eureka/
+2021-02-25 21:26:43.928  INFO 3544 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-02-25 21:26:43.928  INFO 3544 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-02-25 21:26:43.999  INFO 3544 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application OPENAPI-EUREKA with eureka with status UP
+2021-02-25 21:26:44.002  INFO 3544 --- [Thread-33] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-02-25 21:26:44.004  INFO 3544 --- [Thread-33] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-02-25 21:26:44.004  INFO 3544 --- [Thread-33] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-02-25 21:26:44.034  INFO 3544 --- [Thread-33] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-02-25 21:26:44.034  INFO 3544 --- [Thread-33] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-02-25 21:26:44.034  INFO 3544 --- [Thread-33] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-02-25 21:26:44.034  INFO 3544 --- [Thread-33] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-02-25 21:26:44.034  INFO 3544 --- [Thread-33] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-02-25 21:26:44.042  INFO 3544 --- [Thread-33] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-02-25 21:26:44.052  INFO 3544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20000 (http) with context path ''
+2021-02-25 21:26:44.052  INFO 3544 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 20000
+2021-02-25 21:26:44.903  INFO 3544 --- [main] c.l.openplatform.eureka.EurekaStartApp   : Started EurekaStartApp in 11.885 seconds (JVM running for 15.269)
+2021-02-25 21:26:45.293  INFO 3544 --- [RMI TCP Connection(3)-192.168.137.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 21:26:45.293  INFO 3544 --- [RMI TCP Connection(3)-192.168.137.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-25 21:26:45.300  INFO 3544 --- [RMI TCP Connection(3)-192.168.137.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-02-25 21:27:09.625  INFO 3544 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 21:27:10.265  INFO 3544 --- [http-nio-20000-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 21:27:43.468  INFO 3544 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 21:27:43.983  INFO 3544 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 21:27:44.039  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 21:28:12.585  INFO 3544 --- [http-nio-20000-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 21:28:13.092  INFO 3544 --- [http-nio-20000-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 21:28:44.040  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 21:29:44.042  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-02-25 21:30:02.459  INFO 3544 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=false)
+2021-02-25 21:30:02.586  INFO 3544 --- [http-nio-20000-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=false)
+2021-02-25 21:30:02.972  INFO 3544 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 (replication=true)
+2021-02-25 21:30:02.972  INFO 3544 --- [http-nio-20000-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CONFIGSERVER/192.168.4.121:openapi-configserver:12000 with status UP (replication=true)
+2021-02-25 21:30:05.109  INFO 3544 --- [http-nio-20000-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=false)
+2021-02-25 21:30:05.245  INFO 3544 --- [http-nio-20000-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=false)
+2021-02-25 21:30:05.616  INFO 3544 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 (replication=true)
+2021-02-25 21:30:05.616  INFO 3544 --- [http-nio-20000-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance OPENAPI-CACHE/192.168.4.121:openapi-cache:21000 with status UP (replication=true)
+2021-02-25 21:30:44.043  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 21:31:44.043  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 21:32:44.044  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 21:33:44.046  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-02-25 21:34:44.047  INFO 3544 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms

@@ -1,0 +1,26 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: openapi-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/l-960/config_resp #保存配置文件的git服务器仓库地址
+          skip-ssl-validation: true
+  rabbitmq:
+    host: 192.168.4.158
+    port: 5672
+    virtual-host: /test
+    username: test
+    password: test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka # 服务注册到eureka
+management: # 手动刷新配置post:http://localhost:12000/actuator/bus-refresh
+  endpoints:
+    web:
+      exposure:
+        include: "*"

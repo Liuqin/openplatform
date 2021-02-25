@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>openapi-eureka</module>
+        <module>openapi-configserver</module>
+        <module>openapi-cache</module>
     </modules>
 
 
