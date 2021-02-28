@@ -40,7 +40,7 @@
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
-        <!--
+<!--
 config 手动刷新依赖 需要配合rabbitmq使用
 -->
         <dependency>
@@ -61,7 +61,23 @@ config 手动刷新依赖 需要配合rabbitmq使用
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
+        <!--
+        编写测试用例测试redis
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
 
+<!--
+公共参数依赖
+-->
+        <dependency>
+            <groupId>com.lxy</groupId>
+            <artifactId>openapi-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

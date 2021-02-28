@@ -17,7 +17,7 @@ public class EurekaConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()//禁用掉csrf防攻击,防止我们的服务无法注册
                 .authorizeRequests()//需要认证所有的请求
-                .mvcMatchers("/eureka/**").permitAll()//地址放行，无需密码
+                .mvcMatchers("/eureka/**").permitAll()//地址放行，无需密码 放行注册中心
                 .mvcMatchers("/actuator/**").permitAll()
                 .anyRequest().authenticated().and().httpBasic();
     }

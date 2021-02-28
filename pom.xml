@@ -12,6 +12,7 @@
         <module>openapi-eureka</module>
         <module>openapi-configserver</module>
         <module>openapi-cache</module>
+        <module>openapi-commons</module>
     </modules>
 
 

@@ -11,7 +11,7 @@ spring:
       discovery:
         enabled: true #通过服务发现的方式来获取config server的地址
         service-id: openapi-configserver
-      label: master
+      label: master # git分支
       profile: dev # 会去找当前名字-dev的yml配置
 management: # 手动刷新配置
   endpoints:
