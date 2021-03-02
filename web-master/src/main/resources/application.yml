@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://192.168.31.181:3306/openapi-admin?characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    driver-class-name: org.gjt.mm.mysql.Driver
+  application:
+    name: openapi-web-master
+    #rabbitmq服务器的设置应当通过config server来获取,此处为了方便代码编写,故此直接写在这里,具体的配置可以参考 cache模块的配置
+  rabbitmq:
+    host: 192.168.31.181
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+  instance:
+    prefer-ip-address: true #显示 ip
+#别名
+mybatis:
+  type-aliases-package: com.lxy.openapi.web.master.pojo
+feign:
+  hystrix:
+    enabled: true
+### Ribbon 配置
+ribbon:
+  # 连接超时
+  ConnectTimeout: 2000
+  # 响应超时
+  ReadTimeout: 5000
+hystrix:
+  shareSecurityContext: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            # 熔断器超时时间，默认：1000/毫秒
+            timeoutInMilliseconds: 5000

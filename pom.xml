@@ -13,6 +13,8 @@
         <module>openapi-configserver</module>
         <module>openapi-cache</module>
         <module>openapi-commons</module>
+        <module>web-master</module>
+        <module>openapi-gateway</module>
     </modules>
 
 

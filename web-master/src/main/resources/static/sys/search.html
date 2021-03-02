@@ -1,0 +1,50 @@
+<form action="#" class="layui-form">
+    <div class="layui-form-item">
+        <div class="layui-inline">
+            <label>名称:</label>
+            <div class="layui-inline">
+                <input type="text" name="name" autocomplete="off" placeholder="请输入名称"
+                       class="layui-input">
+            </div>
+            <button class="layui-btn" lay-submit lay-filter="search-table">搜索</button>
+        </div>
+    </div>
+</form>
+
+<table class="layui-table" lay-filter="search-table" id="search-table">
+</table>
+<script type="text/javascript" >
+    layui.use(['table', 'layer', 'form'], function () {
+        var table = layui.table;
+        var layer = layui.layer;
+        var form = layui.form;
+        form.render();
+        table.render({
+            id: "search-table",
+            elem: '#search-table'
+            , cellMinWidth: 80
+            , url: '/sys/search/table' //数据接口
+            , page: true //开启分页
+            , cols: [[
+                {checkbox: true},
+                // {field: 'id', title: 'ID', sort: true},
+                {field: 'reveivceTime', title: '接收时间',formatter: function (value, row, index) {return formatDate(value)}},
+                /*{field: 'totalRepTime', title: '请求次数'},*/
+                {field: 'apiName', title: '接口名'},
+                {field: 'remoteIp', title: '访问ip'},
+                /*{field: 'createTime', title: '创建时间',formatter: function (value, row, index) {return formatDate(value)}},*/
+                {field: 'totalTime', title: '响应时间(毫秒)'},
+                // {field: 'errorCode', title: '错误码'},
+                {field: 'app_key', title: 'appkey'},
+                // {field: 'venderId', title: 'venderId'},
+                {field: 'serverIp', title: '服务IP'},
+                {field: 'content', title: '内容'}
+
+            ]]
+        });
+
+
+    })
+    ;
+
+</script>
