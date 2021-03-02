@@ -1,5 +1,5 @@
 # openplatform
->开放平台
+>SpringCloud开放平台
 
 ## 1.eureka模块
 >eureka服务器  
