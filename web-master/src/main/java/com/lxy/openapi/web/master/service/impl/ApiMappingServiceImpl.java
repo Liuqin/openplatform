@@ -3,30 +3,24 @@ package com.lxy.openapi.web.master.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.lxy.openapi.web.master.mapper.ApiMappingMapper;
-import com.lxy.openapi.web.master.mq.SendApiRoutingChangeStream;
 import com.lxy.openapi.web.master.pojo.ApiMapping;
 import com.lxy.openapi.web.master.service.ApiMappingService;
 import com.lxy.openapi.web.master.feign.CacheService;
-import com.lxy.openplatform.commons.APIRoutingType;
-import com.lxy.openplatform.commons.beans.ApiRoutingMQBean;
 import com.lxy.openplatform.commons.constans.SystemParams;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.support.GenericMessage;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
 public class ApiMappingServiceImpl implements ApiMappingService {
+
     @Autowired
     private ApiMappingMapper apiMappingMapper;
 
     @Autowired
     private CacheService cacheService;
 
-    @Autowired
-    private SendApiRoutingChangeStream sendApiRoutingChangeStream;
 
     @Override
     public void addApiMapping(ApiMapping mapping) {
@@ -36,8 +30,6 @@ public class ApiMappingServiceImpl implements ApiMappingService {
             //判断当前添加的数据是不是有效的数据
             if (mapping.getState() == 1) {
                 cacheService.hMSet(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(), mapping);
-                //发送mq到网关
-                sendMessage(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(),APIRoutingType.ADD);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -52,11 +44,9 @@ public class ApiMappingServiceImpl implements ApiMappingService {
             if (mapping.getState() == 1) {
                 //如果更新的是其他内容(有效的) 则更新缓存中的数据
                 cacheService.hMSet(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(), mapping);
-                sendMessage(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(),APIRoutingType.UPDATE);
             }else{
                 //从缓存中删除数据
                 cacheService.deleteKey(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName());
-                sendMessage(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(),APIRoutingType.DELETE);
             }
         } catch (Exception e) {
 
@@ -88,7 +78,6 @@ public class ApiMappingServiceImpl implements ApiMappingService {
                 try {
                     //从缓存中删除数据
                     cacheService.deleteKey(SystemParams.METHOD_REDIS_PRE +mapping.getGatewayApiName());
-                    sendMessage(SystemParams.METHOD_REDIS_PRE + mapping.getGatewayApiName(),APIRoutingType.DELETE);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -98,12 +87,4 @@ public class ApiMappingServiceImpl implements ApiMappingService {
     }
 
 
-    private void sendMessage(String key, APIRoutingType type) {
-        MessageChannel channel = sendApiRoutingChangeStream.message_channel();
-
-        ApiRoutingMQBean bean = new ApiRoutingMQBean();
-        bean.setKey(key);
-        bean.setType(type);
-        channel.send(new GenericMessage<ApiRoutingMQBean>(bean));
-    }
 }

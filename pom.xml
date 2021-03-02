@@ -15,6 +15,7 @@
         <module>openapi-commons</module>
         <module>web-master</module>
         <module>openapi-gateway</module>
+        <module>openapi-testservice01</module>
     </modules>
 
 

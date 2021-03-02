@@ -1,2 +1,23 @@
 server:
-  port: 21000
+  port: 31000
+#告诉我们当前的项目 我们的config server 在什么地方,我们是通过注册中心获取的
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+  instance:
+    prefer-ip-address: true # 显示ip
+spring:
+  application:
+    name: openapi-gateway
+# 网关配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #打开所有的监控管理地址
+zuul:
+  ignored-services: '*' #忽略所有的服务,不在代理列表中显示
+  routes:
+    openapi-cache: '/*' #内存没那么大,不再写一个空服务了,配置将所有的请求都转发到openapi-cache缓存服务,目的是保证我们的zuul可以使用,但是实际开发中我们不会将请求转到缓存,可以写一个没有任何功能的测试服务来进行代理
+
